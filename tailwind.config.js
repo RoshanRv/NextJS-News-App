@@ -6,14 +6,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'disp':['Quicksand']
+      'disp':['Raleway']
     },
     extend: {
       colors:{
-        // "lPri":'#000',
-        "dPri":'#92B4EC',
-        "lSec":'#FFE69A',
-        "dSec":'#FFD24C',
+        "lPri":'#0AA1DD',
+        "dPri":'#2155CD',
+        "lSec":'#E8F9FD',
+        "dSec":'#79DAE8',
       }
     },
   },
