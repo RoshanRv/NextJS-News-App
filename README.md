@@ -6,7 +6,7 @@ Your One Stop Shop For The Latest News Articles.
 
 ## General Info
 
-A SSR (Server Side Rendering) News Article Website Usign Next JS, React JS, News API, & TawilwindCSS.
+A SSR (Server Side Rendering) News Article Website Usign Next JS, React JS, News API, & TailwindCSS.
 
 ## Features
 
