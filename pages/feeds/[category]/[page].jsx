@@ -6,7 +6,7 @@ import Title from '../../../components/Title'
 import NewsBox from '../../../components/NewsBox'
 import Pagination from '../../../components/Pagination'
 
-const page = ({articles,totalResults}) => {
+const Page = ({articles,totalResults}) => {
 
   const {category,page} = useRouter().query
 
@@ -60,4 +60,4 @@ export const getServerSideProps=async(context)=>{
 
 }
 
-export default page
+export default Page

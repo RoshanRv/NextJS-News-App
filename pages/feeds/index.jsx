@@ -22,7 +22,7 @@ const index = () => {
                 content={`News Categories`}
                 />
         </Head>
-        <main className='flex flex-col min-h-[92vh] pb-8 px-4 justify-center items-center font-disp font-bold bg-lSec '>
+        <main className='flex flex-col h-[86vh] pb-8 px-4 justify-center items-center font-disp font-bold bg-lSec '>
             <Title>Categories</Title>
             {/*         categories */}
             <div className="grid lg:grid-cols-3 grid-cols-1 mt-6 lg:gap-8 gap-4">

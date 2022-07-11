@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='min-h-screen '>
+    <div className='min-h-screen  max-h-max flex flex-col  '>
       <Nav/>
       <Component {...pageProps} />
       <Footer />

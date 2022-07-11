@@ -6,7 +6,7 @@ import NewsBox from '../../components/NewsBox'
 import Pagination from '../../components/Pagination'
 import Head from 'next/head'
 
-const search = () => {
+const Search = () => {
 
   const {page} = useRouter().query
   const [articles,setArticles]=useState([])
@@ -34,7 +34,7 @@ const search = () => {
             />
 
       </Head>
-      <main  className='flex flex-col min-h-[86vh] justify-center items-center font-disp bg-lSec' >
+      <main  className='flex flex-col min-h-[86vh] h-full justify-center items-center font-disp bg-lSec' >
         <Title>Search News</Title>
 
         <div className='mt-8 w-full lg:px-40 px-10' >
@@ -44,7 +44,7 @@ const search = () => {
         </div>
         {/*    articles  */}
         {articles.length>0&&(<>
-          <section  className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 lg:gap-12 mt-10 p-4'>
+          <section  className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 h-max lg:gap-12 mt-10 p-4'>
             {articles.map((article,i)=><NewsBox key={i} data={article} />)}
           
           </section>
@@ -58,4 +58,4 @@ const search = () => {
 
 
 
-export default search
+export default Search
