@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export const Card=({text,link})=>{
     return (
-        <div className='px-6 py-3 border-2 bg-lPri cursor-pointer text-white text-center hover:scale-x-105 border-dSec text-xl rounded-lg shadow-lg shadow-dSec hover:bg-dPri transition-all '>
+        <div className=' py-3  px-4  border-2 bg-lPri cursor-pointer text-white text-center hover:scale-x-105 border-dSec text-xl rounded-lg shadow-lg shadow-dSec hover:bg-dPri transition-all '>
             <Link href={link} ><h1>{text}</h1></Link>
         </div>
     )
@@ -22,10 +22,10 @@ const index = () => {
                 content={`News Categories`}
                 />
         </Head>
-        <main className='flex flex-col h-[92vh] justify-center items-center font-disp font-bold bg-lSec '>
+        <main className='flex flex-col min-h-[92vh] pb-8 px-4 justify-center items-center font-disp font-bold bg-lSec '>
             <Title>Categories</Title>
             {/*         categories */}
-            <div className="grid lg:grid-cols-3 grid-cols-2 mt-6 gap-8">
+            <div className="grid lg:grid-cols-3 grid-cols-1 mt-6 lg:gap-8 gap-4">
                <Card text={'Technology'} link={'feeds/technology/1'}  />
                <Card text={'Business'} link={'feeds/business/1'}  />
                <Card text={'Health'} link={'feeds/health/1'}  />

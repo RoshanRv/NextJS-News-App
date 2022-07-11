@@ -34,10 +34,10 @@ const search = () => {
             />
 
       </Head>
-      <main  className='flex flex-col min-h-[95vh] justify-center items-center font-disp bg-lSec' >
+      <main  className='flex flex-col min-h-[86vh] justify-center items-center font-disp bg-lSec' >
         <Title>Search News</Title>
 
-        <div className='mt-8 w-full lg:px-40 px-20' >
+        <div className='mt-8 w-full lg:px-40 px-10' >
           {/*     search  */}
           <input type="search" value={searchTerm}  onChange={(e)=>setSearchTerm(e.target.value)} className='w-full my-4  bg-dSec rounded-lg p-3 text-white placeholder:text-gray-100 text-xl font-bold outline-0 border-4 border-white' placeholder='Search' />
           <button onClick={()=>handleSearch()} className='block w-max mx-auto px-6 py-2 my-6 rounded-lg bg-lPri text-white border-4 text-2xl ' >Search</button>
