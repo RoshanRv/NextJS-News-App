@@ -14,7 +14,7 @@ export const Card=({text,link})=>{
 const index = () => {
   return (
       <>
-        <main className='flex flex-col h-[92vh] justify-center items-center font-disp bg-lSec '>
+        <main className='flex flex-col h-[92vh] justify-center items-center font-disp font-bold bg-lSec '>
             <Title>Categories</Title>
             {/*         categories */}
             <div className="grid lg:grid-cols-3 grid-cols-2 mt-6 gap-8">

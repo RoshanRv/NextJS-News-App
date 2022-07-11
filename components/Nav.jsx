@@ -7,7 +7,7 @@ const Nav = () => {
         <div className='flex gap-x-8 items-center'>
             <Link href={'/'}  ><a className='' >Home</a></Link>
             <Link href={'/feeds'}  ><a className='' >Feeds</a></Link>
-            <Link href={'/search'}  ><a className='' >Search</a></Link>
+            <Link href={'/search/1'}  ><a className='' >Search</a></Link>
         </div>
     </nav>
   )
