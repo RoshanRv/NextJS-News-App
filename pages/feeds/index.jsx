@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Title from '../../components/Title'
+import Head from 'next/head'
 
 export const Card=({text,link})=>{
     return (
@@ -14,6 +15,13 @@ export const Card=({text,link})=>{
 const index = () => {
   return (
       <>
+        <Head>
+            <title>{`News | Categories`}</title>
+                <meta
+                name="description"
+                content={`News Categories`}
+                />
+        </Head>
         <main className='flex flex-col h-[92vh] justify-center items-center font-disp font-bold bg-lSec '>
             <Title>Categories</Title>
             {/*         categories */}

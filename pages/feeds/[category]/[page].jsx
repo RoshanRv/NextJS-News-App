@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import axios from 'axios'
 import Title from '../../../components/Title'
 import NewsBox from '../../../components/NewsBox'
@@ -11,6 +12,27 @@ const page = ({articles,totalResults}) => {
 
   return (
     <>
+      <Head>
+        <title>{`News | ${category}`}</title>
+            <meta
+              name="description"
+              content={`Latest ${category} News Articles`}
+            />
+
+            <meta property="og:image" content={articles[0].urlToImage} />
+            <meta property="og:title" content={articles[0]?.title + ' and more!'} />
+            <meta
+              property="og:description"
+              content={articles[0]?.description}
+            />
+
+            <meta property="twitter:image" content={articles[0].urlToImage} />
+            <meta property="twitter:title" content={articles[0]?.title + ' and more!'} />
+            <meta
+              property="twitter:description"
+              content={articles[0]?.description}
+            />
+      </Head>
       <main  className='flex flex-col justify-center items-center font-disp bg-lSec' >
         <Title>{category} News</Title>
 
